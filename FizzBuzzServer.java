@@ -19,7 +19,7 @@ public class FizzBuzzServer extends UnicastRemoteObject implements FizzBuzz {
         responses = new String[15];
         responses[0] = fizz + buzz;
 
-        for (int i = 1; i < 15; ++i) {
+        for (int i = 1; i < 15; i = -~i) {
             if (i % 3 == 0)
                 responses[i] = fizz;
             else if (i % 5 == 0)
