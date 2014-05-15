@@ -8,20 +8,21 @@ a joke implementation, so it is deliberately complex.
 
 
 
-Compile with:
+Compile with
+
+	make all
+
+alternatively,
 
 	javac *.java; rmic FizzBuzzServer
 
-or:
-	make all
-
 	
-Run server with: 
+Run server with
 
 	java -Djava.security.policy=server.policy FizzBuzzServer
 
 
 
-Run client with:	
+Run client with
 
 	java -Djava.security.policy=client.policy FizzBuzzClient
